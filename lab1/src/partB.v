@@ -1,0 +1,16 @@
+module FourDigitLEDdriver(reset, clk, an3, an2, an1, an0, \
+a, b, c, d, e, f, g, dp);
+input clk, reset;
+output an3, an2, an1, an0;
+output a, b, c, d, e, f, g, dp;
+...
+MMCME2_BASE #(
+...
+)
+MMCME2_BASE_inst (
+...
+);
+...
+LEDdecoder LEDdecoder_inst (...);
+...
+endmodule
