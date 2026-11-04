@@ -17,8 +17,8 @@ module LEDdecoder_tb;
     );
 
     initial begin
-        $monitor("t=%0t char=%b (%h)  LED=%b  CA..CG=%b%b%b%b%b%b%b",
-                 $time, char, char, LED, CA, CB, CC, CD, CE, CF, CG);
+        $monitor("t=%0t char=%b  LED=%b  CA..CG=%b%b%b%b%b%b%b",
+                 $time, char, LED, CA, CB, CC, CD, CE, CF, CG);
 
         char = 4'h0;
         #10;
